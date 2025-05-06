@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+    color: #333;
+}
+
+header {
+    background-color: #ffccd9;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-family: "Allura", cursive;
+    font-style: italic;
+    font-size: 70px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.05);
+    color: #ffdef0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #83344d;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.container {
+    flex: 1; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: auto; 
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 2px solid #ffb0e7;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(255, 150, 227, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+}
+
+.product a {
+    display: none; 
+    text-decoration: none; 
+    color: #fff; 
+    background-color: #ff66b2; 
+    padding: 10px 20px; 
+    font-weight: bold; 
+    font-size: 18px; 
+    border-radius: 5px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 2; 
+}
+
+.product:hover a {
+    display: block; 
+    opacity: 1; 
+}
+
+.product:hover img {
+    filter: blur(5px); 
+    transition: filter 0.3s ease; 
+}
+
+.product a:hover {
+    background-color: #ff66b2 
+}
+
+
+
+.hamburger {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #833454;
+}
+
+.side-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #f8e1f4;
+    border: 1px solid #d8a7b6;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(160, 80, 111, 0.2);
+}
+
+.side-menu a {
+    display: block;
+    color: #833463;
+    text-decoration: none;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none !important; 
+    color: inherit; 
+}
+
+a:hover {
+    color: inherit; 
+}
+
