@@ -1,0 +1,209 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background-image: url('../file/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffdcfe;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    font-family: "Allura", cursive;
+    font-style: italic;
+    font-size: 70px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.05);
+    color: #ffdef0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header-icons {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 28px;
+  z-index: 10000;
+}
+
+.header-icons .icon {
+  color: #000;
+  text-decoration: none;
+}
+
+.main-header {
+  position: relative;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px 0 20px;
+  list-style: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.main-nav ul li {
+  margin: 0 15px;
+}
+
+.main-nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.main-nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ffb0e7;
+  transition: width 0.3s ease;
+}
+
+.main-nav ul li a:hover::after {
+  width: 100%;
+}
+
+main, .container {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  margin-top: auto;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px; /* Aradaki boşluk */
+}
+
+.product-image {
+    flex: 0 0 55%; /* Fotoğraf alanı genişliği */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Fotoğraf sağa yaslansın */
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-height: 600px;
+}
+
+.product-info {
+    flex: 1;
+    max-width: 40%; /* Fotoğraf büyüdüğü için bilgi kısmı küçüldü */
+}
+
+.product-info h1 {
+    font-size: 2.8em;
+    margin: 0 0 20px;
+}
+
+.product-info p.price {
+    font-size: 2.2em;
+    color: #921612;
+    margin: 0 0 40px;
+}
+
+.product-info form input[type="submit"] {
+    /* Butonun rengini bozmayacağız, sadece büyüklüğü koruyalım */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product-info form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+}
