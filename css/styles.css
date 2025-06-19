@@ -261,8 +261,8 @@ footer {
 }
 
 .slider-wrapper {
-  width: 1200px; /* Görsellerin genişliği ile aynı */
-  height: 500px;  /* Görsellerin yüksekliği ile aynı */
+  width: 1200px;
+  height: 500px;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -275,7 +275,7 @@ footer {
   justify-content: flex-start;
   gap: 20px;
   padding-left: 0;
-  width: calc((1200px + 20px) * 5); /* 5 slide varsa */
+  width: calc((1200px + 20px) * 5);
 }
 
 .promo-image-container {

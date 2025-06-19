@@ -141,14 +141,14 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 40px; /* Aradaki boşluk */
+    gap: 40px;
 }
 
 .product-image {
-    flex: 0 0 55%; /* Fotoğraf alanı genişliği */
+    flex: 0 0 55%;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Fotoğraf sağa yaslansın */
+    justify-content: flex-end;
 }
 
 .product-image img {
@@ -161,7 +161,7 @@ footer {
 
 .product-info {
     flex: 1;
-    max-width: 40%; /* Fotoğraf büyüdüğü için bilgi kısmı küçüldü */
+    max-width: 40%;
 }
 
 .product-info h1 {
@@ -176,7 +176,6 @@ footer {
 }
 
 .product-info form input[type="submit"] {
-    /* Butonun rengini bozmayacağız, sadece büyüklüğü koruyalım */
     background-color: #333;
     color: #fff;
     border: none;
@@ -191,7 +190,6 @@ footer {
 .product-info form input[type="submit"]:hover {
     background-color: #555;
 }
-
 
 .product-grid {
     display: flex;
